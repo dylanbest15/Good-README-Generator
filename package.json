@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/dylanbest15/Good-README-Generator/issues"
   },
-  "homepage": "https://github.com/dylanbest15/Good-README-Generator#readme"
+  "homepage": "https://github.com/dylanbest15/Good-README-Generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
 }
