@@ -52,7 +52,7 @@ function promptUser() {
                 "Apache License 2.0",
                 "MIT License",
                 "Boost Software License 1.0",
-                "The Unlicense"    
+                "The Unlicense"
             ],
             name: "license",
             message: "Choose a license for your application."
@@ -81,18 +81,39 @@ function generateReadme(answers) {
     ## Description
     ${answers.description}
 
+    ## Table of Contents
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [License](#license)
+    * [Contributing](#contributing)
+    * [Tests](#tests)
+    * [Questions](#questions)
+
     ## Installation
     ${answers.installation}
 
     ## Usage
     ${answers.usage}
 
+    ## License
+
     ## Contributing
     ${answers.contributing}
 
     ## Tests
-    ${answers.tests}`
+    ${answers.tests}
+    
+    ## Questions
+    Link to Github: https://github.com/${answers.github}
+    Please email ${answers.email} with additional questions.`
 }
 
 // write readme file
-fs.writeFile("README.md", )
+promptUser().then((answers) => {
+    const text = generateReadme(answers);
+    return fs.writeFile("README.md", text);
+}).then(() => {
+    console.log("Successfully wrote to index.html!");
+}).catch((err) => {
+    console.log(err);
+})
