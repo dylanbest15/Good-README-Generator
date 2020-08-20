@@ -39,6 +39,9 @@ function promptUser() {
             message: "What are the test instructions for your application?"
         },
         {
+            type: "list",
+            name: "license",
+            message: "Choose a license for your application.",
             choices: [
                 "GNU AGPLv3",
                 "GNU GPLv3",
@@ -48,9 +51,7 @@ function promptUser() {
                 "MIT License",
                 "Boost Software License 1.0",
                 "The Unlicense"
-            ],
-            name: "license",
-            message: "Choose a license for your application."
+            ]
         },
         {
             type: "input",
@@ -87,6 +88,7 @@ ${answers.installation}
 ${answers.usage}
 
 ## License
+This application is covered under ${answers.license}. 
 
 ## Contributing
 ${answers.contributing}

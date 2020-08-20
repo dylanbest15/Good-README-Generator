@@ -1,6 +1,6 @@
-# Title
+# Good-README-Generator
 ## Description
-Description
+It generates a good README.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -11,18 +11,19 @@ Description
 * [Questions](#questions)
 
 ## Installation
-Installment steps
+Install Inquirer.
 
 ## Usage
-Instructions for use
+Follow the prompts.
 
 ## License
+This application is covered under MIT License. 
 
 ## Contributing
-Contribution guidelines
+Standard guidelines.
 
 ## Tests
-Test instructions
+No test instructions as of now.
     
 ## Questions
 Link to Github: https://github.com/dylanbest15
