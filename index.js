@@ -98,7 +98,7 @@ ${answers.contributing}
 ${answers.tests}
     
 ## Questions
-Link to Github: https://github.com/${answers.github}
+Link to Github: https://github.com/${answers.github}.
 Please email ${answers.email} with additional questions.`
 }
 
