@@ -1,7 +1,9 @@
 // installs
 const fs = require("fs");
 const inquirer = require("inquirer");
-// const util = require("util");
+const util = require("util");
+
+const writeFileAsync = util.promisify(fs.writeFile);
 
 // prompt user to create readme function
 function promptUser() {
@@ -66,43 +68,41 @@ function promptUser() {
 
 // generate readme content function
 function generateReadme(answers) {
-    return `
-    # ${answers.title}
+    return `# ${answers.title}
+## Description
+${answers.description}
 
-    ## Description
-    ${answers.description}
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
-    ## Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributing](#contributing)
-    * [Tests](#tests)
-    * [Questions](#questions)
+## Installation
+${answers.installation}
 
-    ## Installation
-    ${answers.installation}
+## Usage
+${answers.usage}
 
-    ## Usage
-    ${answers.usage}
+## License
 
-    ## License
+## Contributing
+${answers.contributing}
 
-    ## Contributing
-    ${answers.contributing}
-
-    ## Tests
-    ${answers.tests}
+## Tests
+${answers.tests}
     
-    ## Questions
-    Link to Github: https://github.com/${answers.github}
-    Please email ${answers.email} with additional questions.`
+## Questions
+Link to Github: https://github.com/${answers.github}
+Please email ${answers.email} with additional questions.`
 }
 
 // write readme file
 promptUser().then((answers) => {
     const text = generateReadme(answers);
-    return fs.writeFile("README.md", text);
+    return writeFileAsync("README.md", text);
 }).then(() => {
     console.log("Successfully wrote to index.html!");
 }).catch((err) => {
