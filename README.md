@@ -1,4 +1,4 @@
-[![Generic badge](https://img.shields.io/badge/License-Mozilla Public License 2.0-<COLOR>.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/License-MozillaPublicLicense2.0-<COLOR>.svg)](https://shields.io/)
 # Good-README-Generator
 ## Description
 Generates a good README.
