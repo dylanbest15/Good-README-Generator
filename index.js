@@ -3,6 +3,7 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const util = require("util");
 
+// write file function
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // prompt user to create readme function
@@ -101,7 +102,7 @@ Link to Github: https://github.com/${answers.github}
 Please email ${answers.email} with additional questions.`
 }
 
-// write readme file
+// call functions to write readme file
 promptUser().then((answers) => {
     const text = generateReadme(answers);
     return writeFileAsync("README.md", text);
