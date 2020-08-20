@@ -70,7 +70,8 @@ function promptUser() {
 
 // generate readme content function
 function generateReadme(answers) {
-    return `# ${answers.title}
+    return `[![Generic badge](https://img.shields.io/badge/License-${answers.license}-<COLOR>.svg)]
+# ${answers.title}
 ## Description
 ${answers.description}
 
