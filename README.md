@@ -1,7 +1,7 @@
-[![Generic badge](https://img.shields.io/badge/License-Mozilla_Public_License_2.0-<COLOR>.svg)](https://shields.io/)
-# Good-README-Generator
+[![Generic badge](https://img.shields.io/badge/License-GNU_AGPLv3-<COLOR>.svg)](https://shields.io/)
+# adf
 ## Description
-Generates a good README.
+gfs
 
 ## Table of Contents
 * [Installation](#installation)
@@ -12,20 +12,20 @@ Generates a good README.
 * [Questions](#questions)
 
 ## Installation
-Install Inquirer.
+asd
 
 ## Usage
-Follow the prompts.
+fs
 
 ## License
-This application is covered under Mozilla Public License 2.0. 
+This application is covered under GNU AGPLv3. 
 
 ## Contributing
-Standard guidelines.
+dfg
 
 ## Tests
-No test instructions as of now.
+dfg
     
 ## Questions
-Link to Github: https://github.com/dylanbest15.
-Please email best.dylan15@gmail.com with additional questions.
+Link to Github: https://github.com/dsfs.
+Please email asd with additional questions.
