@@ -1,7 +1,7 @@
-[![Generic badge](https://img.shields.io/badge/License-GNU_AGPLv3-<COLOR>.svg)](https://shields.io/)
-# adf
+[![Generic badge](https://img.shields.io/badge/License-Mozilla_Public License 2.0-<COLOR>.svg)](https://shields.io/)
+# Good-README-Generator
 ## Description
-gfs
+Short Description.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -12,20 +12,20 @@ gfs
 * [Questions](#questions)
 
 ## Installation
-asd
+Steps to Install.
 
 ## Usage
-fs
+Instructions for Use.
 
 ## License
-This application is covered under GNU AGPLv3. 
+Copyright © 2020. This application is covered under Mozilla Public License 2.0. 
 
 ## Contributing
-dfg
+Contribution Guidelines.
 
 ## Tests
-dfg
+Test Instructions
     
 ## Questions
-Link to Github: https://github.com/dsfs.
-Please email asd with additional questions.
+Link to Github: https://github.com/dylanbest15.
+Please email best.dylan15@gmail.com with additional questions.

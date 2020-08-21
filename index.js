@@ -1,10 +1,21 @@
 // installs
 const fs = require("fs");
 const inquirer = require("inquirer");
-const util = require("util");
 
 // write file function
-const writeFileAsync = util.promisify(fs.writeFile);
+const writeFilePromise = (text) => {
+    return new Promise((resolve, reject) => {
+        fs.writeFile("README.md", text, (err) => {
+            if (err) {
+                return reject(err);
+            }
+            else {
+                return resolve("Successfully wrote to README.md!");
+            }
+        })
+    })
+
+}
 
 // prompt user to create readme function
 function promptUser() {
@@ -90,7 +101,7 @@ ${answers.installation}
 ${answers.usage}
 
 ## License
-This application is covered under ${answers.license}. 
+Copyright © 2020. This application is covered under ${answers.license}. 
 
 ## Contributing
 ${answers.contributing}
@@ -106,9 +117,9 @@ Please email ${answers.email} with additional questions.`
 // call functions to write readme file
 promptUser().then((answers) => {
     const text = generateReadme(answers);
-    return writeFileAsync("README.md", text);
-}).then(() => {
-    console.log("Successfully wrote to index.html!");
+    return writeFilePromise(text);
+}).then((success) => {
+    console.log(success);
 }).catch((err) => {
     console.log(err);
 })
