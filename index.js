@@ -81,7 +81,7 @@ function promptUser() {
 
 // generate readme content function
 function generateReadme(answers) {
-    return `[![Generic badge](https://img.shields.io/badge/License-${answers.license.replace(" ", "_")}-<COLOR>.svg)](https://shields.io/)
+    return `[![Generic badge](https://img.shields.io/badge/License-${answers.license.replace(/ /g, "_")}-<COLOR>.svg)](https://shields.io/)
 # ${answers.title}
 ## Description
 ${answers.description}

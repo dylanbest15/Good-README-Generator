@@ -1,7 +1,7 @@
-[![Generic badge](https://img.shields.io/badge/License-Mozilla_Public License 2.0-<COLOR>.svg)](https://shields.io/)
-# Good-README-Generator
+[![Generic badge](https://img.shields.io/badge/License-Mozilla_Public_License_2.0-<COLOR>.svg)](https://shields.io/)
+# 
 ## Description
-Short Description.
+
 
 ## Table of Contents
 * [Installation](#installation)
@@ -12,20 +12,20 @@ Short Description.
 * [Questions](#questions)
 
 ## Installation
-Steps to Install.
+
 
 ## Usage
-Instructions for Use.
+
 
 ## License
 Copyright © 2020. This application is covered under Mozilla Public License 2.0. 
 
 ## Contributing
-Contribution Guidelines.
+
 
 ## Tests
-Test Instructions
+
     
 ## Questions
-Link to Github: https://github.com/dylanbest15.
-Please email best.dylan15@gmail.com with additional questions.
+Link to Github: https://github.com/.
+Please email  with additional questions.
