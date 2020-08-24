@@ -5,8 +5,8 @@
 https://drive.google.com/file/d/1cens6B56pkH4YeyZb40wf4jZgW0vfLRE/view
 
 ## Screenshots
-![Good-README-Generator Node.js](screenshot1-hw7.png)
-![Good-README-Generator VS Code](screenshot2-hw7.png)
+![Good-README-Generator Node.js](screenshot2-hw7.png)
+![Good-README-Generator VS Code](screenshot1-hw7.png)
 
 ## Description
 This application generatoes a good README file for their own applications and projects. Using Node.js, when the user runs the application they will be prompted with different sections of the README including: description, installation, usage, license, contributing, tests, and questions. It will then generate a README with what the user entered, and also include a table of contents and a badge for the license. This application is useful for anyone who wishes to include a good README file with their applications.
