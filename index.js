@@ -14,7 +14,6 @@ const writeFilePromise = (text) => {
             }
         })
     })
-
 }
 
 // prompt user to create readme function
